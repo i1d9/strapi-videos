@@ -10,11 +10,14 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@strapi/plugin-i18n": "4.4.3",
     "@strapi/plugin-users-permissions": "4.4.3",
     "@strapi/strapi": "4.4.3",
     "@vscode/sqlite3": "^5.0.8",
-    "better-sqlite3": "7.4.6"
+    "better-sqlite3": "7.4.6",
+    "fluent-ffmpeg": "^2.1.2",
+    "hls-server": "^1.5.0"
   },
   "author": {
     "name": "A Strapi developer"

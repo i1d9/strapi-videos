@@ -4,18 +4,46 @@
   "info": {
     "singularName": "media",
     "pluralName": "medias",
-    "displayName": "Media"
+    "displayName": "Media",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "category": {
+    "uploader": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "media"
+    },
+    "description": {
+      "type": "text"
+    },
+    "name": {
       "type": "string"
     },
-    "path": {
-      "type": "string"
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

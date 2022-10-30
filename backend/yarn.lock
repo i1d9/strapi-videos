@@ -1130,6 +1130,25 @@
   "resolved" "https://registry.npmjs.org/@emotion/weak-memoize/-/weak-memoize-0.3.0.tgz"
   "version" "0.3.0"
 
+"@ffmpeg-installer/ffmpeg@^1.1.0":
+  "integrity" "sha512-Uq4rmwkdGxIa9A6Bd/VqqYbT7zqh1GrT5/rFwCwKM70b42W5gIjWeVETq6SdcL0zXqDtY081Ws/iJWhr1+xvQg=="
+  "resolved" "https://registry.npmjs.org/@ffmpeg-installer/ffmpeg/-/ffmpeg-1.1.0.tgz"
+  "version" "1.1.0"
+  optionalDependencies:
+    "@ffmpeg-installer/darwin-arm64" "4.1.5"
+    "@ffmpeg-installer/darwin-x64" "4.1.0"
+    "@ffmpeg-installer/linux-arm" "4.1.3"
+    "@ffmpeg-installer/linux-arm64" "4.1.4"
+    "@ffmpeg-installer/linux-ia32" "4.1.0"
+    "@ffmpeg-installer/linux-x64" "4.1.0"
+    "@ffmpeg-installer/win32-ia32" "4.1.0"
+    "@ffmpeg-installer/win32-x64" "4.1.0"
+
+"@ffmpeg-installer/linux-x64@4.1.0":
+  "integrity" "sha512-Y5BWhGLU/WpQjOArNIgXD3z5mxxdV8c41C+U15nsE5yF8tVcdCGet5zPs5Zy3Ta6bU7haGpIzryutqCGQA/W8A=="
+  "resolved" "https://registry.npmjs.org/@ffmpeg-installer/linux-x64/-/linux-x64-4.1.0.tgz"
+  "version" "4.1.0"
+
 "@fingerprintjs/fingerprintjs@3.3.3":
   "integrity" "sha512-HH6KqZnopF3NIXypYG4f2qxoSRmGCSzp81wJMfWjSTtvsX3cAg12RFJcm+a6Az3XadcZUrXKW3p5Dv0wyCUeuA=="
   "resolved" "https://registry.npmjs.org/@fingerprintjs/fingerprintjs/-/fingerprintjs-3.3.3.tgz"
@@ -2623,7 +2642,7 @@
   "resolved" "https://registry.npmjs.org/assign-symbols/-/assign-symbols-1.0.0.tgz"
   "version" "1.0.0"
 
-"async@^3.1.0":
+"async@^3.1.0", "async@>=0.2.9":
   "integrity" "sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ=="
   "resolved" "https://registry.npmjs.org/async/-/async-3.2.4.tgz"
   "version" "3.2.4"
@@ -4767,6 +4786,14 @@
   "resolved" "https://registry.npmjs.org/flagged-respawn/-/flagged-respawn-1.0.1.tgz"
   "version" "1.0.1"
 
+"fluent-ffmpeg@^2.1.2":
+  "integrity" "sha512-IZTB4kq5GK0DPp7sGQ0q/BWurGHffRtQQwVkiqDgeO6wYJLLV5ZhgNOQ65loZxxuPMKZKZcICCUnaGtlxBiR0Q=="
+  "resolved" "https://registry.npmjs.org/fluent-ffmpeg/-/fluent-ffmpeg-2.1.2.tgz"
+  "version" "2.1.2"
+  dependencies:
+    "async" ">=0.2.9"
+    "which" "^1.1.1"
+
 "fn.name@1.x.x":
   "integrity" "sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw=="
   "resolved" "https://registry.npmjs.org/fn.name/-/fn.name-1.1.0.tgz"
@@ -5300,6 +5327,14 @@
     "tiny-warning" "^1.0.0"
     "value-equal" "^1.0.1"
 
+"hls-server@^1.5.0":
+  "integrity" "sha512-uDTPyuNvHjd5KkK/Zmm6vAWERdRp0l8rlkfSO56KcJGsEfFMwVcgkzbScTmrV+kuOq9FznWf9ze9pprtGEletA=="
+  "resolved" "https://registry.npmjs.org/hls-server/-/hls-server-1.5.0.tgz"
+  "version" "1.5.0"
+  dependencies:
+    "http-attach" "^1.0.0"
+    "minimist" "^1.2.0"
+
 "hmac-drbg@^1.0.1":
   "integrity" "sha512-Tti3gMqLdZfhOQY1Mzf/AanLiqh1WTiJgEj26ZuYQ9fbkLomzGchCws4FyrSd4VkpBfiNhaE1On+lOz894jvXg=="
   "resolved" "https://registry.npmjs.org/hmac-drbg/-/hmac-drbg-1.0.1.tgz"
@@ -5387,6 +5422,11 @@
   dependencies:
     "deep-equal" "~1.0.1"
     "http-errors" "~1.8.0"
+
+"http-attach@^1.0.0":
+  "integrity" "sha512-RWbYNCz3ybfIvjbELCaLD3eh01yKmqro/hoCzBFiUCoHZfb6FdNeSalYjMInVGsM0cj7M8DmXf290sWFJLsz4w=="
+  "resolved" "https://registry.npmjs.org/http-attach/-/http-attach-1.0.0.tgz"
+  "version" "1.0.0"
 
 "http-cache-semantics@^4.0.0":
   "integrity" "sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ=="
@@ -8086,6 +8126,7 @@
   "version" "17.0.2"
 
 "react-is@>= 16.8.0":
+  "integrity" "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="
   "version" "17.0.2"
 
 "react-query@3.24.3":
@@ -10029,7 +10070,7 @@
     "has-tostringtag" "^1.0.0"
     "is-typed-array" "^1.1.9"
 
-"which@^1.2.14", "which@^1.2.9":
+"which@^1.1.1", "which@^1.2.14", "which@^1.2.9":
   "integrity" "sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ=="
   "resolved" "https://registry.npmjs.org/which/-/which-1.3.1.tgz"
   "version" "1.3.1"
